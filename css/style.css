@@ -1,0 +1,128 @@
+/* select all */
+*{
+    margin: 0;
+    padding: 0;
+    /* normalize css */
+   box-sizing: border-box;
+} 
+@font-face {
+    font-family:playfairdisplay-italic ;
+    src: url(../fonts/playfairdisplay/playfairdisplay-italic.ttf);
+}
+
+body{
+  /* common css */
+  color:white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background:linear-gradient(to bottom,#12101B 40%,#252049 60%)
+} 
+header{
+    margin-bottom: 200px;
+    border: 0.1px solid rgb(215, 189, 226,0.5) ;
+}
+/* id selector */
+#mar{
+    width: calc(100% - 20px);
+    margin: 20px;
+}
+/* class selector */
+.container{
+    width: 100%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+} 
+.logo{
+    font-family:playfairdisplay-italic;
+    font-weight: 300;
+    display: inline-block;
+    width: 20%;
+    color: white;
+} 
+.logo h1{
+    font-weight: 300;
+}
+.menu{
+width: 60%;
+float: right;
+/* border: 1px solid red; */
+} 
+
+.menu ul li{
+    float: left;
+    list-style: none;
+} 
+.menu ul li a{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 50px 10px;
+    text-decoration: none;
+    color: white;
+}
+.menu ul li a:active{
+    background-color:#8357FF ;
+    border-radius: 12px;
+} 
+ 
+.hero{
+    margin-bottom: 200px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+    line-height: 70px;
+    letter-spacing: 3px;
+    background: linear-gradient(to right, white 55%,#EDE7FF 50%,#8357FF 100% );
+    color: transparent;
+    background-clip: text;
+} 
+.container2{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.product{
+    float: left;
+    margin: 0px 50px 0px;
+    width: 25%;
+    border: 0.1px solid rgb(215, 189, 226,0.5) ;
+    border-radius: 12px;   
+    animation-name: test;
+    animation-duration: 3s;
+    /* animation-iteration-count: 5; */
+    
+} 
+@keyframes test {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+      }
+    
+      to {
+        translate: 0 0;
+        scale: 100% 1;
+      }
+}
+.product img{
+    width: 100%;
+    border-radius: 12px;
+} 
+.product,h3,p {
+    text-align: center;
+}
+.product a{
+    text-decoration: none;
+    color: white;
+} 
+.footer{
+    height: 100px;
+    margin-top: 200px;
+    border: 0.1px solid rgb(215, 189, 226,0.5) ;
+    background-color:#110F19 ;
+    font-size: 1.2rem;
+}
+.footer p{
+    margin-top: 40px;
+    color: #737887;
+}
+.footer span{
+    color:white ;
+}
